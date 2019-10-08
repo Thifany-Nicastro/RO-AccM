@@ -1,7 +1,5 @@
 # RO-AccM
 
-PHP
-
-Laravel
-
-MySQL
+-PHP
+-Laravel
+-MySQL
