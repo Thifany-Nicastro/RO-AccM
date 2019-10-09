@@ -1,7 +1,6 @@
 # RO-AccM
 
 # Detalhes
-* PHP 7.3.9
-* Laravel
+* PHP 7
 * MySQL
 * Bootstrap
