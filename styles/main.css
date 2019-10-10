@@ -166,10 +166,10 @@ html, body {
 }
 
 .heart {
-    color: #57a8ff;
+    color: #FFAEC9;
     transition: 0.5s ease;
 }
 
 .heart:hover {
-    color: #FFAEC9;
+    color: #57a8ff;
 }
