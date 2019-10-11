@@ -98,7 +98,12 @@ html, body {
 }
 
 
-
+/* 
+------------------
+    Navegação
+    Inventário
+------------------ 
+*/
 
 #tags-nav li.nav-item {
     transition: 0.7s ease;
@@ -111,11 +116,13 @@ html, body {
     transition: 0.5s ease;
 }
 
-#tags-nav .active{
+#tags-nav .active, 
+#tags-nav .show {
     background: #FFAEC9;
 }
 
-#tags-nav .active a {
+#tags-nav .active a, 
+#tags-nav .show a {
     color: white !important;
 }
 
@@ -124,8 +131,32 @@ html, body {
     /* border-color: white; */
 }
 
-#tags-nav li.nav-item:hover a {
+#tags-nav li.nav-item:hover a.n {
     color: white;
+}
+
+#tags-nav .show>.nav-link {
+    background: none;
+    color: none;
+}
+
+#tags-nav .dropdown-item:hover {
+    background: white;
+    color: #FFAEC9 !important;
+}
+
+#tags-nav .dropdown-menu {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    left: -9px !important;
+    top: 2px !important;
+    border-top: 1px solid white;
+}
+
+#tags-nav .dropdown-menu a {
+    word-wrap: break-word; 
+    white-space: normal;
 }
 
 /* ul {
