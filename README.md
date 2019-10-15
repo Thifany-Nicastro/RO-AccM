@@ -13,6 +13,7 @@
 
 * Enviar screenshot
   * Adicionar informações
+    * Nome
 * Alterar informações
 * Deletar screenshot
 * Favoritar screenshot
@@ -23,6 +24,8 @@
 Informações sobre os personagens
 
 * Adicionar personagem
+  * Adicionar informações
+* Alterar informações
 
 ## Inventário
 
