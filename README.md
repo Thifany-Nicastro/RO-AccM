@@ -12,7 +12,7 @@
 Álbum para exibir as screenshots salvas
 
 1. Enviar screenshot
-        1. Adicionar informações
+    1. Adicionar informações
       * Nome
       * Descrição
       * Data
