@@ -12,14 +12,14 @@
 Álbum para exibir as screenshots salvas
 
 1. Enviar screenshot
-    1.1. Adicionar informações
+    1. Adicionar informações
       * Nome
       * Descrição
       * Data
-2. Alterar informações
-3. Favoritar screenshot
-  3.1. Desfavoritar screenshot
-4. Deletar screenshot
+1. Alterar informações
+1. Favoritar screenshot
+  1. Desfavoritar screenshot
+1. Deletar screenshot
 
 ## Personagens
 
