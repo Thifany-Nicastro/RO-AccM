@@ -50,3 +50,11 @@ Informações sobre o inventário
       * Tipo
       * Equipa em
       * Personagem
+
+## Configurações
+
+...
+
+## Início
+
+Adicionados recentemente
