@@ -36,7 +36,7 @@ Informações sobre os personagens
       * Atributos
 1. Alterar informações
 1. Favoritar personagem
-   * Desfavoritar screenshot
+   * Desfavoritar personagem
 1. Deletar personagem
 
 ## Inventário
