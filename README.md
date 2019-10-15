@@ -12,10 +12,10 @@
 Álbum para exibir as screenshots salvas
 
 1. Enviar screenshot
-  1.1. Adicionar informações
-    * Nome
-    * Descrição
-    * Data
+    1.1. Adicionar informações
+      * Nome
+      * Descrição
+      * Data
 2. Alterar informações
 3. Favoritar screenshot
   3.1. Desfavoritar screenshot
