@@ -204,3 +204,21 @@ html, body {
 .heart:hover {
     color: #57a8ff;
 }
+
+
+/* 
+------------------
+    Album
+    Card
+------------------ 
+*/
+
+#album .card-img-top {
+    max-width: 300px;
+    max-height: 250px;
+}
+
+#inventario .card-img-side {
+    max-width: 150px;
+    max-height: 150px;
+}
