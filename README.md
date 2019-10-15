@@ -16,7 +16,7 @@
 * Alterar informações
 * Deletar screenshot
 * Favoritar screenshot
-* Desfavoritar screenshot
+  * Desfavoritar screenshot
 
 ## Personagens
 
