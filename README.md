@@ -4,6 +4,7 @@
 * PHP 7
 * MySQL
 * Bootstrap
+* MVC
 
 # Features
 
