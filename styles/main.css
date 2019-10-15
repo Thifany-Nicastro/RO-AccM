@@ -21,7 +21,6 @@ html, body {
     font-size: 80%;
 }*/
 
-
 /* 
 ------------------
     Paginação
@@ -48,10 +47,7 @@ html, body {
     color: white;
 }
 
-.page-item:first-child .page-link,
-.page-item:last-child .page-link,
-.pagination-lg .page-item:first-child .page-link,
-.pagination-lg .page-item:last-child .page-link {
+.page-item:first-child .page-link, .page-item:last-child .page-link, .pagination-lg .page-item:first-child .page-link, .pagination-lg .page-item:last-child .page-link {
     border-radius: 0px;
 }
 
@@ -89,14 +85,13 @@ html, body {
     color: white;
 }
 
-#header-nav .active{
+#header-nav .active {
     background: #57a8ff;
 }
 
 #header-nav .active a {
     color: white !important;
 }
-
 
 /* 
 ------------------
@@ -116,13 +111,11 @@ html, body {
     transition: 0.5s ease;
 }
 
-#tags-nav .active, 
-#tags-nav .show {
+#tags-nav .active, #tags-nav .show {
     background: #FFAEC9;
 }
 
-#tags-nav .active a, 
-#tags-nav .show a {
+#tags-nav .active a, #tags-nav .show a {
     color: white !important;
 }
 
@@ -155,7 +148,7 @@ html, body {
 }
 
 #tags-nav .dropdown-menu a {
-    word-wrap: break-word; 
+    word-wrap: break-word;
     white-space: normal;
 }
 
@@ -205,7 +198,6 @@ html, body {
     color: #57a8ff;
 }
 
-
 /* 
 ------------------
     Album
@@ -219,6 +211,11 @@ html, body {
 }
 
 #inventario .card-img-side {
-    max-width: 150px;
-    max-height: 150px;
+    width: 150px;
+    height: 150px;
+    object-fit: none;
+}
+
+#inventario .card-img-side-back {
+    border-radius: 100%;
 }
