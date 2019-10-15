@@ -50,6 +50,7 @@ Informações sobre o inventário
       * Tipo
       * Equipa em
       * Personagem
+   * Imagem 200 x 200px
 
 ## Configurações
 
