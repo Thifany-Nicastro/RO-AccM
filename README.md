@@ -47,7 +47,5 @@ Informações sobre o inventário
    * Adicionar informações
       * Nome
       * Tipo
-      * Imagem
-      * Case visual: Imagem 2
       * Equipa em
       * Personagem
