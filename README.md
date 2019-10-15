@@ -11,21 +11,33 @@
 
 Álbum para exibir as screenshots salvas
 
-* Enviar screenshot
-  * Adicionar informações
+1 Enviar screenshot
+  1.1 Adicionar informações
     * Nome
-* Alterar informações
-* Deletar screenshot
-* Favoritar screenshot
-  * Desfavoritar screenshot
+    * Descrição
+    * Data
+2 Alterar informações
+3 Favoritar screenshot
+  3.1 Desfavoritar screenshot
+4 Deletar screenshot
 
 ## Personagens
 
 Informações sobre os personagens
 
-* Adicionar personagem
-  * Adicionar informações
-* Alterar informações
+1 Adicionar personagem
+  1.1 Adicionar informações
+    * Nome
+    * Classe
+    * Nível
+    * Cor
+    * Título
+    * Conta
+    * Atributos
+2 Alterar informações
+3 Favoritar personagem
+  3.1 Desfavoritar screenshot
+4 Deletar personagem
 
 ## Inventário
 
