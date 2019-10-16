@@ -216,7 +216,7 @@ html, body {
     /* width: 150px;
     height: 150px; */
     object-fit: none;
-    border: 1px solid black;
+    /* border: 1px solid black;*/
 }
 
 #inventario .card-img-side-back {
