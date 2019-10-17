@@ -216,6 +216,11 @@ html, body {
     color: #57a8ff;
 }
 
+#album .card-title {
+    /*margin: 0;*/
+    font-weight: 100;
+}
+
 /* 
 ------------------
     Inventario
