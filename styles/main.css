@@ -189,6 +189,24 @@ html, body {
     transform: rotateY(0deg);
 }
 
+/* 
+------------------
+    Album
+    Card
+------------------ 
+*/
+
+#album .card-img-top {
+    /*max-width: 500px;
+    max-height: 400px;
+    object-fit: cover;*/
+
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
 .heart {
     color: #FFAEC9;
     transition: 0.5s ease;
@@ -200,15 +218,10 @@ html, body {
 
 /* 
 ------------------
-    Album
+    Inventario
     Card
 ------------------ 
 */
-
-#album .card-img-top {
-    max-width: 300px;
-    max-height: 250px;
-}
 
 #inventario .card-img-side {
     max-width: 100%;
