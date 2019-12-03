@@ -1,4 +1,5 @@
 # RO-AccM
+Ragnarok Online Account Manager
 
 # Detalhes
 * PHP 7
