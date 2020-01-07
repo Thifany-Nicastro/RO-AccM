@@ -2,24 +2,10 @@ html, body {
     height: 100%;
 }
 
-/*main>.container {
-    padding: 60px 15px 0;
-}*/
-
 .footer {
     background-color: #FFAEC9;
-    /* #fdb6e0 */
     color: white;
 }
-
-/*.footer>.container {
-    padding-right: 15px;
-    padding-left: 15px;
-}*/
-
-/*code {
-    font-size: 80%;
-}*/
 
 /* 
 ------------------
@@ -78,7 +64,6 @@ html, body {
 
 #header-nav li.nav-item:hover {
     background: #57a8ff;
-    /* border-color: white; */
 }
 
 #header-nav li.nav-item:hover a {
@@ -121,7 +106,6 @@ html, body {
 
 #tags-nav li.nav-item:hover {
     background: #FFAEC9;
-    /* border-color: white; */
 }
 
 #tags-nav li.nav-item:hover a.n {
@@ -151,10 +135,6 @@ html, body {
     word-wrap: break-word;
     white-space: normal;
 }
-
-/* ul {
-    border-bottom: 1px solid #57a8ff;
-} */
 
 /* 
 ------------------
@@ -243,4 +223,31 @@ html, body {
     /*width: 100%;
     height: 100%;*/
     object-fit: contain;
+}
+
+/* 
+------------------
+    Historico
+    Table
+------------------ 
+*/
+
+.compra {
+    background: rgb(231, 140, 140);
+}
+
+.venda {
+    background: rgb(141, 219, 141);
+}
+
+/* 
+------------------
+    Build
+------------------ 
+*/
+
+.tag {
+    background: none;
+    border: 1px solid #007bff;
+    color: #007bff;
 }
