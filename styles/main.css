@@ -261,3 +261,11 @@ html, body {
     background: var(--menu-color);
     border: 1px solid var(--menu-color);
 }
+
+.build-img-skills {
+    text-align: center;
+}
+
+.stats > td {
+    text-align: center;
+}

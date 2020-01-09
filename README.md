@@ -53,14 +53,6 @@ Informações sobre o inventário
       * Personagem
    * Imagem 200 x 200px
 
-## Hisórico
-
-...
-
-## Builds
-
-...
-
 ## Configurações
 
 ...
