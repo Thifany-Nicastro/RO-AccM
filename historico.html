@@ -56,7 +56,7 @@
 
     <main class="flex-fill" id="historico">
         <div class="container">
-            <div class="row justify-content-md-center m-0">
+            <div class="row justify-content-center">
                 <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                     <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tags-nav">
                         <li class="nav-item active">
@@ -72,7 +72,33 @@
                 </div>
             </div>
             <div class="row justify-content-center">
-                <div class="col my-3 d-flex justify-content-center">
+                <div class="col justify-content-center card p-4 m-3">
+                    <form>
+                        <div class="form-row align-items-center">
+                            <div class="col-md-8">
+                                <label class="sr-only" for="inlineFormInput">Item</label>
+                                <input type="text" class="form-control mb-2" id="inlineFormInput"
+                                    placeholder="Item">
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1"
+                                    value="option1">
+                                <label class="form-check-label" for="inlineRadio1">Compra</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                                <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2"
+                                    value="option2">
+                                <label class="form-check-label" for="inlineRadio2">Venda</label>
+                            </div>
+                            <div class="col">
+                                <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col my-2 justify-content-center">
                     <table class="table">
                         <thead>
                             <tr>
