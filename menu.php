@@ -14,8 +14,14 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-images fa-lg"></i></a>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-box-open fa-lg"></i></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#"><i class="fas fa-wallet fa-lg"></i></i></a>
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="#"><i class="fas fa-clipboard-list fa-lg"></i></i></a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#"><i class="fas fa-cog fa-lg"></i></a>
