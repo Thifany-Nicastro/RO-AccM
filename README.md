@@ -2,10 +2,9 @@
 Ragnarok Online Account Manager
 
 # Detalhes
-* PHP 7
+* Laravel 7
 * MySQL
 * Bootstrap
-* MVC
 
 # Features
 
