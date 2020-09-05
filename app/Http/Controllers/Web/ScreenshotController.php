@@ -9,6 +9,6 @@ class ScreenshotController extends Controller
 {
     public function index()
     {
-        return view('user.album');
+        return view('user.screenshots.index');
     }
 }

@@ -9,6 +9,6 @@ class BuildController extends Controller
 {
     public function index()
     {
-        return view('user.builds');
+        return view('user.builds.index');
     }
 }

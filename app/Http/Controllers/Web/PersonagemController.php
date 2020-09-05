@@ -16,7 +16,7 @@ class PersonagemController extends Controller
     public function index()
     {
         $personagens = Personagem::all();
-        return view('user.personagens', compact('personagens'));
+        return view('user.personagens.index', compact('personagens'));
     }
 
     /**

@@ -9,6 +9,6 @@ class InventarioController extends Controller
 {
     public function index()
     {
-        return view('user.inventario');
+        return view('user.inventario.index');
     }
 }
