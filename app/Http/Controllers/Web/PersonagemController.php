@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
+use App\Personagem;
 
 class PersonagemController extends Controller
 {
@@ -14,7 +15,8 @@ class PersonagemController extends Controller
      */
     public function index()
     {
-        //
+        $personagens = Personagem::all();
+        return view('user.personagens', compact('personagens'));
     }
 
     /**

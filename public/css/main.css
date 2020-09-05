@@ -1,0 +1,271 @@
+:root {
+    --main-color: #FFAEC9;
+    --menu-color: #57a8ff;
+}
+
+html, body {
+    height: 100%;
+}
+
+.footer {
+    background-color: var(--main-color);
+    color: white;
+}
+
+/* 
+------------------
+    Paginação
+------------------ 
+*/
+
+.pagination li {
+    border-bottom: 1px solid var(--main-color);
+}
+
+.pagination a {
+    border: none;
+    color: var(--main-color);
+    transition: 0.7s ease;
+}
+
+.pagination a:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.pagination a:hover {
+    background: var(--main-color);
+    color: white;
+}
+
+.page-item:first-child .page-link, .page-item:last-child .page-link, .pagination-lg .page-item:first-child .page-link, .pagination-lg .page-item:last-child .page-link {
+    border-radius: 0px;
+}
+
+/* 
+------------------
+    Navegação
+------------------ 
+*/
+
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,102,203, 0.5)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.custom-toggler.navbar-toggler {
+    border-color: var(--main-color);
+}
+
+#header-nav li.nav-item {
+    transition: 0.7s ease;
+    border-bottom: 1px solid var(--menu-color);
+    padding: 4px 9px;
+}
+
+#header-nav li.nav-item a {
+    color: var(--menu-color);
+    transition: 0.5s ease;
+}
+
+#header-nav li.nav-item:hover {
+    background: var(--menu-color);
+}
+
+#header-nav li.nav-item:hover a {
+    color: white;
+}
+
+#header-nav .active {
+    background: var(--menu-color);
+}
+
+#header-nav .active a {
+    color: white !important;
+}
+
+/* 
+------------------
+    Navegação
+    Inventário
+------------------ 
+*/
+
+#tags-nav li.nav-item {
+    transition: 0.7s ease;
+    border-bottom: 1px solid var(--main-color);
+    padding: 4px 9px;
+}
+
+#tags-nav li.nav-item a {
+    color: var(--main-color);
+    transition: 0.5s ease;
+}
+
+#tags-nav .active, #tags-nav .show {
+    background: var(--main-color);
+}
+
+#tags-nav .active a, #tags-nav .show a {
+    color: white !important;
+}
+
+#tags-nav li.nav-item:hover {
+    background: var(--main-color);
+}
+
+#tags-nav li.nav-item:hover a.n {
+    color: white;
+}
+
+#tags-nav .show>.nav-link {
+    background: none;
+    color: none;
+}
+
+#tags-nav .dropdown-item:hover {
+    background: white;
+    color: var(--main-color) !important;
+}
+
+#tags-nav .dropdown-menu {
+    width: 100%;
+    border-radius: 0;
+    border: none;
+    left: -9px !important;
+    top: 2px !important;
+    border-top: 1px solid white;
+}
+
+#tags-nav .dropdown-menu a {
+    word-wrap: break-word;
+    white-space: normal;
+}
+
+/* 
+------------------
+    Flip Card
+------------------ 
+*/
+
+.card-flip>div {
+    backface-visibility: hidden;
+    transition: transform 300ms;
+    transition-timing-function: linear;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+}
+
+.card-flip:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card-flip:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+/* 
+------------------
+    Album
+    Card
+------------------ 
+*/
+
+#album .card-img-top {
+    /*max-width: 500px;
+    max-height: 400px;
+    object-fit: cover;*/
+
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    object-position: 100% 0;
+}
+
+.heart {
+    color: var(--main-color);
+    transition: 0.5s ease;
+}
+
+.heart:hover {
+    color: var(--menu-color);
+}
+
+#album .card-title {
+    /*margin: 0;*/
+    font-weight: 100;
+    font-size: 1.25rem;
+}
+
+/* 
+------------------
+    Inventario
+    Card
+------------------ 
+*/
+
+#inventario .card-img-side {
+    max-width: 100%;
+    max-height: 100%;
+    /* width: 150px;
+    height: 150px; */
+    object-fit: none;
+    /* border: 1px solid black;*/
+}
+
+#inventario .card-img-side-back {
+    /* border-radius: 100%; */
+    /*width: 100%;
+    height: 100%;*/
+    object-fit: contain;
+}
+
+/* 
+------------------
+    Historico
+    Table
+------------------ 
+*/
+
+.compra {
+    background: rgb(231, 140, 140);
+}
+
+.venda {
+    background: rgb(141, 219, 141);
+}
+
+/* 
+------------------
+    Build
+------------------ 
+*/
+
+.btn-tag {
+    background: none;
+    border: 1px solid var(--menu-color); /*#007bff;*/
+    color: var(--menu-color);
+}
+
+.btn-tag:hover {
+    background: var(--menu-color);
+    border: 1px solid var(--menu-color);
+}
+
+.build-img-skills {
+    text-align: center;
+}
+
+.stats > td {
+    text-align: center;
+}
