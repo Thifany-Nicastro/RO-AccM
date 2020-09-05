@@ -7,5 +7,8 @@ use Illuminate\Http\Request;
 
 class CarteiraController extends Controller
 {
-    //
+    public function index()
+    {
+        return view('user.carteira');
+    }
 }

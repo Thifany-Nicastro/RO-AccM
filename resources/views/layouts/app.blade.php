@@ -81,23 +81,23 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarCollapse">
-                <ul class="navbar-nav mx-auto">
-                    <li class="nav-item">
+                <ul class="navbar-nav mx-auto" id="nav">
+                    <li class="nav-item {{ request()->routeIs('user.index') ? 'active' : '' }}">
                         <a class="nav-link" href="{{route('user.index')}}"><i class="fas fa-home fa-lg"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->routeIs('user.personagens') ? 'active' : '' }}">
                         <a class="nav-link" href="{{route('user.personagens')}}"><i class="fas fa-address-card fa-lg"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->routeIs('user.album') ? 'active' : '' }}">
                         <a class="nav-link" href="{{route('user.album')}}"><i class="fas fa-images fa-lg"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->routeIs('user.inventario') ? 'active' : '' }}">
                         <a class="nav-link" href="{{route('user.inventario')}}"><i class="fas fa-box-open fa-lg"></i></a>
                     </li>
-                    <li class="nav-item">
+                    <li class="nav-item {{ request()->routeIs('user.carteira') ? 'active' : '' }}">
                         <a class="nav-link" href="{{route('user.carteira')}}"><i class="fas fa-wallet fa-lg"></i></i></a>
                     </li>
-                    <li class="nav-item active">
+                    <li class="nav-item {{ request()->routeIs('user.builds') ? 'active' : '' }}">
                         <a class="nav-link" href="{{route('user.builds')}}"><i class="fas fa-clipboard-list fa-lg"></i></i></a>
                     </li>
                     <li class="nav-item">
@@ -109,7 +109,7 @@
 
         <main class="py-4">
             <div class="container">
-                <div class="row justify-content-md-center m-0">
+                {{-- <div class="row justify-content-md-center m-0">
                     <div class="col-lg-12 col-md-12 col-sm-12 col-12">
                         <ul class="nav nav-pills nav-fill flex-column flex-md-row" id="tags-nav">
                             <li class="nav-item active">
@@ -126,14 +126,32 @@
                             </li>
                         </ul>
                     </div>
-                </div>
+                </div> --}}
 
                 @yield('content')
             </div>
         </main>
     </div>
 
-    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/app.js') }}"></script>
+    <script>
+        $(function () {
+            // var active = window.location.pathname;
+            // $("#nav a[href|='" + active + "']").parent().addClass("active");
+            // $.each($('#nav').find('li'), function() {
+            //     $(this).toggleClass('active', 
+            //     window.location.pathname.indexOf($(this).find('a').attr('href')) > -1);
+            // });
+            // $( "#nav .nav-item" ).bind( "click", function(event) {
+            //     //event.preventDefault();
+            //     var clickedItem = $( this );
+            //     $( "#nav .nav-item" ).each( function() {
+            //         $( this ).removeClass( "active" );
+            //     });
+            //     clickedItem.addClass( "active" );
+            // });
+        });
+    </script>
     @yield('scripts')
 </body>
 
