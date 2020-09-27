@@ -4,9 +4,9 @@ namespace App\Http\Controllers\Web;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Screenshot;
+use App\Character;
 
-class ScreenshotController extends Controller
+class CharacterController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +15,8 @@ class ScreenshotController extends Controller
      */
     public function index()
     {
-        $screenshots = Screenshot::paginate(9);
-        return view('user.screenshots.index', compact('screenshots'));
+        $personagens = Character::paginate(9);
+        return view('user.personagens.index', compact('personagens'));
     }
 
     /**

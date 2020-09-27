@@ -24,6 +24,15 @@
         </div>
     @endforeach
 </div>
+<div class="row">
+    <div class="col-lg-12 col-md-12 col-sm-12 col-12">
+        <nav aria-label="Page navigation">
+            <ul class="pagination justify-content-center">
+                {{ $personagens->links() }}
+            </ul>
+        </nav>
+    </div>
+</div>
 @endsection
 
 @section('scripts')

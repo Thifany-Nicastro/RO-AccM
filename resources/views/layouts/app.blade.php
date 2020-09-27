@@ -16,7 +16,7 @@
 
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
-    <link href="{{ asset('css/main.css') }}" rel="stylesheet">
+    {{-- <link href="{{ asset('css/main.css') }}" rel="stylesheet"> --}}
 </head>
 
 <body>
@@ -85,20 +85,20 @@
                     <li class="nav-item {{ request()->routeIs('user.index') ? 'active' : '' }}">
                         <a class="nav-link" href="{{route('user.index')}}"><i class="fas fa-home fa-lg"></i></a>
                     </li>
-                    <li class="nav-item {{ request()->routeIs('user.personagens') ? 'active' : '' }}">
-                        <a class="nav-link" href="{{route('user.personagens')}}"><i class="fas fa-address-card fa-lg"></i></a>
+                    <li class="nav-item {{ request()->routeIs('user.personagem.index') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{route('user.personagem.index')}}"><i class="fas fa-address-card fa-lg"></i></a>
                     </li>
-                    <li class="nav-item {{ request()->routeIs('user.album') ? 'active' : '' }}">
-                        <a class="nav-link" href="{{route('user.album')}}"><i class="fas fa-images fa-lg"></i></a>
+                    <li class="nav-item {{ request()->routeIs('user.album.index') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{route('user.album.index')}}"><i class="fas fa-images fa-lg"></i></a>
                     </li>
-                    <li class="nav-item {{ request()->routeIs('user.inventario') ? 'active' : '' }}">
-                        <a class="nav-link" href="{{route('user.inventario')}}"><i class="fas fa-box-open fa-lg"></i></a>
+                    <li class="nav-item {{ request()->routeIs('user.inventario.index') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{route('user.inventario.index')}}"><i class="fas fa-box-open fa-lg"></i></a>
                     </li>
                     <li class="nav-item {{ request()->routeIs('user.carteira') ? 'active' : '' }}">
                         <a class="nav-link" href="{{route('user.carteira')}}"><i class="fas fa-wallet fa-lg"></i></i></a>
                     </li>
-                    <li class="nav-item {{ request()->routeIs('user.builds') ? 'active' : '' }}">
-                        <a class="nav-link" href="{{route('user.builds')}}"><i class="fas fa-clipboard-list fa-lg"></i></i></a>
+                    <li class="nav-item {{ request()->routeIs('user.builds.index') ? 'active' : '' }}">
+                        <a class="nav-link" href="{{route('user.builds.index')}}"><i class="fas fa-clipboard-list fa-lg"></i></i></a>
                     </li>
                     <li class="nav-item">
                         {{-- <a class="nav-link" href="{{route('user.configs')}}"><i class="fas fa-cog fa-lg"></i></a> --}}

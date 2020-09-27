@@ -19,11 +19,11 @@ Route::namespace('Web')->group(function () {
     // Route::middleware(['user'])->group(function () {
     Route::name('user.')->group(function () {
         Route::get('/', 'UserController@index')->name('index');
-        Route::get('/personagens', 'PersonagemController@index')->name('personagens');
-        Route::get('/album', 'ScreenshotController@index')->name('album');
-        Route::get('/inventario', 'InventarioController@index')->name('inventario');
+        Route::resource('/characters', 'CharacterController');
+        Route::resource('/screenshots', 'ScreenshotController');
+        Route::resource('/items', 'ItemController');
         Route::get('/carteira', 'CarteiraController@index')->name('carteira');
-        Route::get('/builds', 'BuildController@index')->name('builds');
+        Route::resource('/builds', 'BuildController');
         // Route::get('/configs', 'PersonagemController@index')->name('configs');
     });
     // });

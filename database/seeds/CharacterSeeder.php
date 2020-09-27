@@ -1,9 +1,9 @@
 <?php
 
 use Illuminate\Database\Seeder;
-use App\Personagem;
+use App\Character;
 
-class PersonagemSeeder extends Seeder
+class CharacterSeeder extends Seeder
 {
     /**
      * Run the database seeds.
@@ -12,6 +12,6 @@ class PersonagemSeeder extends Seeder
      */
     public function run()
     {
-        factory(Personagem::class, 10)->create();
+        factory(Character::class, 10)->create();
     }
 }
