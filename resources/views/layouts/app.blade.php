@@ -41,6 +41,7 @@
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('register') }}">Register</a>
                 </li>
+                @auth
                 <li class="nav-item">
                     <form id="logout-form" action="{{ route('logout') }}" method="POST">
                         @csrf
@@ -48,6 +49,7 @@
                         <button class="nav-link btn btn-link" href="{{ route('logout') }}">Logout</button>
                     </form>
                 </li>
+                @endauth
             </ul>
         </div>
     </nav>
