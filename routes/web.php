@@ -18,6 +18,10 @@ Route::get('/', function () {
 });
 
 
-Route::get('/home', function () {
+Route::get('home', function () {
     return view('home');
+});
+
+Route::middleware(['auth'])->group(function () {
+    Route::resource('characters', 'CharacterController');
 });
