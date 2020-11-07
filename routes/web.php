@@ -20,8 +20,8 @@ Route::get('/', function () {
 
 Route::get('home', function () {
     return view('home');
-});
+})->middleware(['verified']);
 
-Route::middleware(['auth'])->group(function () {
+Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('characters', 'CharacterController');
 });
