@@ -15,7 +15,8 @@ class CharacterController extends Controller
      */
     public function index()
     {
-        return view('characters.index');
+        $characters = Character::all();
+        return view('characters.index', compact('characters'));
     }
 
     /**
@@ -40,7 +41,7 @@ class CharacterController extends Controller
 
         auth()->user()->characters()->create($validated);
 
-        notify()->success('Laravel Notify is awesome!');
+        notify()->success('Character created!');
         return redirect()->route('characters.index');
     }
 
@@ -86,6 +87,9 @@ class CharacterController extends Controller
      */
     public function destroy(Character $character)
     {
-        //
+        $character->delete();
+
+        notify()->success('Character deleted!');
+        return back();
     }
 }

@@ -11,6 +11,11 @@ class Character extends Model
 
     protected $fillable = ['name', 'job', 'race', 'gender'];
 
+    public function getRouteKeyName()
+    {
+        return 'uuid';
+    }
+    
     public function user()
     {
     	return $this->belongsTo(User::class);
