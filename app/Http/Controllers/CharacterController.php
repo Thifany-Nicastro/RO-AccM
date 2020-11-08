@@ -74,9 +74,14 @@ class CharacterController extends Controller
      * @param  \App\Models\Character  $character
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Character $character)
+    public function update(CharacterRequest $request, Character $character)
     {
-        //
+        $validated = $request->validated();
+
+        $character->update($validated);
+
+        notify()->success('Character updated!');
+        return redirect()->route('characters.index');
     }
 
     /**

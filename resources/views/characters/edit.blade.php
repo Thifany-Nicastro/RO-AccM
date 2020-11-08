@@ -8,6 +8,12 @@
                 <div class="card-header">Edit Character</div>
 
                 <div class="card-body">
+                    <form method="POST" action="{{ route('characters.update', $character) }}">
+                        @csrf
+                        @method("PUT")
+
+                        @include('characters.form')
+                    </form>
                 </div>
             </div>
         </div>
