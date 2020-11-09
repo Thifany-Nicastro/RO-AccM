@@ -84,6 +84,12 @@ class CharacterController extends Controller
     {
         $validated = $request->validated();
 
+        Storage::disk('public')->delete("uploads/$character->picture");
+        $file = $validated['picture'];
+        $fileName = time().'_'.$file->getClientOriginalName();
+        $file->storeAs('uploads', $fileName, 'public');
+        $validated['picture'] = $fileName;
+
         $character->update($validated);
 
         notify()->success('Character updated!');
