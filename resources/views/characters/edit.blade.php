@@ -8,7 +8,7 @@
                 <div class="card-header">Edit Character</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('characters.update', $character) }}">
+                    <form method="POST" action="{{ route('characters.update', $character) }}" enctype="multipart/form-data">
                         @csrf
                         @method("PUT")
 

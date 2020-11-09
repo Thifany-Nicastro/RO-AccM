@@ -9,7 +9,7 @@ class Character extends Model
 {
     use HasFactory;
 
-    protected $fillable = ['name', 'job', 'race', 'gender'];
+    protected $fillable = ['picture', 'name', 'job', 'race', 'gender'];
 
     public function getRouteKeyName()
     {

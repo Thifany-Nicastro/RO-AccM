@@ -17,6 +17,7 @@ class CreateCharactersTable extends Migration
             $table->id();
             $table->foreignId('user_id')->constrained();
             $table->uuid('uuid');
+            $table->string('picture')->nullable();
             $table->string('name');
             $table->string('job');
             $table->string('race');

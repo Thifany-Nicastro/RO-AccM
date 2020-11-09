@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Character;
 use Illuminate\Http\Request;
 use App\Http\Requests\CharacterRequest;
+use Illuminate\Support\Facades\Storage;
 
 class CharacterController extends Controller
 {
@@ -38,6 +39,11 @@ class CharacterController extends Controller
     public function store(CharacterRequest $request)
     {
         $validated = $request->validated();
+
+        $file = $validated['picture'];
+        $fileName = time().'_'.$file->getClientOriginalName();
+        $file->storeAs('uploads', $fileName, 'public');
+        $validated['picture'] = $fileName;
 
         auth()->user()->characters()->create($validated);
 
@@ -93,6 +99,8 @@ class CharacterController extends Controller
     public function destroy(Character $character)
     {
         $character->delete();
+
+        Storage::disk('public')->delete("uploads/$character->picture");
 
         notify()->success('Character deleted!');
         return back();

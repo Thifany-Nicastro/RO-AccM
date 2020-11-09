@@ -8,7 +8,7 @@
                 <div class="card-header">Create Character</div>
 
                 <div class="card-body">
-                    <form method="POST" action="{{ route('characters.store') }}">
+                    <form method="POST" action="{{ route('characters.store') }}" enctype="multipart/form-data">
                         @csrf
 
                         @include('characters.form')

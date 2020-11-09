@@ -24,6 +24,7 @@ class CharacterRequest extends FormRequest
     public function rules()
     {
         return [
+            'picture' => 'mimes:jpeg,png',
             'name' => 'required',
             'job' => 'required',
             'race' => 'required',
