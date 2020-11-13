@@ -1,3 +1,8 @@
 .btn-link {
     border: none !important;
 }
+
+.img-thumbnail-character {
+    width: 400px;
+    height: 400px;
+}

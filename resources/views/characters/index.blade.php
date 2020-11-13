@@ -2,10 +2,12 @@
 
 @section('content')
 <div class="container">
-    <div class="row row-cols-3">
+    <div class="row">
         <div class="col-12 my-3 text-right">
             <a type="button" href="{{ route('characters.create') }}" class="btn btn-success">New character <i class="fas fa-plus"></i></a>
         </div>
+    </div>
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-2 row-cols-lg-3">
         @foreach ($characters as $character)
         <div class="col my-3">
             <div class="card">
@@ -16,7 +18,7 @@
                 <div class="card-body">
                     {{ $character->job }}
                     {{ $character->picture }}
-                    <img src="{{ $character->picture ? asset("storage/uploads/$character->picture") : asset('img/default.jpg')}}">
+                    <img src="{{ $character->picture ? asset("storage/uploads/$character->picture") : asset('img/default.jpg')}}" class="img-thumbnail img-thumbnail-character">
                 </div>
 
                 <div class="card-footer">
