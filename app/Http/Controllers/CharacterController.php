@@ -43,7 +43,7 @@ class CharacterController extends Controller
     {
         $validated = $request->validated();
 
-        $validated['picture'] = $this->storeFile($validated['picture']);
+        $validated['picture'] = $this->storeFile($request);
 
         auth()->user()->characters()->create($validated);
 
@@ -85,7 +85,7 @@ class CharacterController extends Controller
         $validated = $request->validated();
 
         Storage::disk('public')->delete("uploads/$character->picture");
-        $validated['picture'] = $this->storeFile($validated['picture']);
+        $validated['picture'] = $this->storeFile($request);
 
         $character->update($validated);
 
