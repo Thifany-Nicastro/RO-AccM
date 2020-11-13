@@ -6,9 +6,12 @@ use App\Models\Character;
 use Illuminate\Http\Request;
 use App\Http\Requests\CharacterRequest;
 use Illuminate\Support\Facades\Storage;
+use App\Traits\FileUploadTrait;
 
 class CharacterController extends Controller
 {
+    use FileUploadTrait;
+
     /**
      * Display a listing of the resource.
      *
@@ -40,10 +43,7 @@ class CharacterController extends Controller
     {
         $validated = $request->validated();
 
-        $file = $validated['picture'];
-        $fileName = time().'_'.$file->getClientOriginalName();
-        $file->storeAs('uploads', $fileName, 'public');
-        $validated['picture'] = $fileName;
+        $validated['picture'] = $this->storeFile($validated['picture']);
 
         auth()->user()->characters()->create($validated);
 
@@ -85,10 +85,7 @@ class CharacterController extends Controller
         $validated = $request->validated();
 
         Storage::disk('public')->delete("uploads/$character->picture");
-        $file = $validated['picture'];
-        $fileName = time().'_'.$file->getClientOriginalName();
-        $file->storeAs('uploads', $fileName, 'public');
-        $validated['picture'] = $fileName;
+        $validated['picture'] = $this->storeFile($validated['picture']);
 
         $character->update($validated);
 
