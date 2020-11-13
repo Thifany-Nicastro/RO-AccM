@@ -16,7 +16,7 @@
                 <div class="card-body">
                     {{ $character->job }}
                     {{ $character->picture }}
-                    <img src="{{ asset('storage/uploads/'.$character->picture) }}">
+                    <img src="{{ $character->picture ? asset("storage/uploads/$character->picture") : asset('img/default.jpg')}}">
                 </div>
 
                 <div class="card-footer">
