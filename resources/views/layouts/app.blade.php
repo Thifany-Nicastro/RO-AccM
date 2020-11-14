@@ -94,7 +94,7 @@
                 <a class="nav-link" href="#"><i class="fas fa-box-open fa-lg"></i></a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" href="#"><i class="fas fa-wallet fa-lg"></i></a>
+                <a class="nav-link" href="{{ route('transactions.index') }}"><i class="fas fa-wallet fa-lg"></i></a>
             </li>
             <li class="nav-item">
                 <a class="nav-link" href="#"><i class="fas fa-clipboard-list fa-lg"></i></a>
@@ -108,13 +108,9 @@
 
     <main class="py-4">
         @yield('content')
-
-        <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button>
     </main>
 
     @include('notify::messages')
-
-    
 
     {{-- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
         integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
@@ -133,7 +129,7 @@
             $('[data-toggle="popover"]').popover();
         })
     </script>
-    
+
     @yield('scripts')
 </body>
 

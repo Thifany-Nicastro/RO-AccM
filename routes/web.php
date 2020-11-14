@@ -24,4 +24,5 @@ Route::get('home', function () {
 
 Route::middleware(['auth', 'verified'])->group(function () {
     Route::resource('characters', 'CharacterController');
+    Route::resource('transactions', 'TransactionController');
 });
