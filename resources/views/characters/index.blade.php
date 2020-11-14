@@ -36,3 +36,34 @@
     </div>
 </div>
 @endsection
+
+@section('scripts')
+<script>
+    $(function () {
+        $('form').submit(function(e) {
+            e.preventDefault();
+            var currentForm = this;
+            bootbox.confirm({ 
+                title: "Delete character",
+                message: "Are you really sure?",
+                buttons: {
+                    cancel: {
+                        label: '<i class="fa fa-times"></i> No',
+                        className: 'btn-danger'
+                    },
+                    confirm: {
+                        label: '<i class="fa fa-check"></i> Yes',
+                        className: 'btn-success'
+                    }
+                },
+                // size: "small",
+                callback: function(result) { 
+                    if (result) {
+                        currentForm.submit();
+                    }
+                }
+            })
+        });
+    });
+</script>
+@endsection

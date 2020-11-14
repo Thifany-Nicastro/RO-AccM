@@ -125,13 +125,16 @@
     </script> --}}
 
     <script src="{{ asset('js/app.js') }}"></script>
+
     @notifyJs
+
     <script>
         $(function () {
             $('[data-toggle="popover"]').popover();
         })
     </script>
     
+    @yield('scripts')
 </body>
 
 </html>
