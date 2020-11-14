@@ -128,7 +128,7 @@
     @notifyJs
     <script>
         $(function () {
-            $('[data-toggle="popover"]').popover()
+            $('[data-toggle="popover"]').popover();
         })
     </script>
     
